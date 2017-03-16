@@ -15,6 +15,10 @@
 		D25492B21E76F61800CF7F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25492B01E76F61800CF7F33 /* LaunchScreen.storyboard */; };
 		D25492BD1E76F61900CF7F33 /* myIosTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25492BC1E76F61900CF7F33 /* myIosTestTests.m */; };
 		D25492C81E76F61900CF7F33 /* myIosTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25492C71E76F61900CF7F33 /* myIosTestUITests.m */; };
+		D25492D71E76F68700CF7F33 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = D25492D61E76F68700CF7F33 /* Card.m */; };
+		D25492DF1E777CF100CF7F33 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = D25492DE1E777CF100CF7F33 /* Deck.m */; };
+		D25492E21E7840A000CF7F33 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D25492E11E7840A000CF7F33 /* PlayingCard.m */; };
+		D25492E51E79643D00CF7F33 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = D25492E41E79643D00CF7F33 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		D25492C31E76F61900CF7F33 /* myIosTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myIosTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25492C71E76F61900CF7F33 /* myIosTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myIosTestUITests.m; sourceTree = "<group>"; };
 		D25492C91E76F61900CF7F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25492D51E76F66600CF7F33 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		D25492D61E76F68700CF7F33 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		D25492DD1E777CF100CF7F33 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		D25492DE1E777CF100CF7F33 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		D25492E01E7840A000CF7F33 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		D25492E11E7840A000CF7F33 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		D25492E31E79643D00CF7F33 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		D25492E41E79643D00CF7F33 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +113,12 @@
 		D25492A11E76F61800CF7F33 /* myIosTest */ = {
 			isa = PBXGroup;
 			children = (
-				D25492A51E76F61800CF7F33 /* AppDelegate.h */,
-				D25492A61E76F61800CF7F33 /* AppDelegate.m */,
 				D25492A81E76F61800CF7F33 /* ViewController.h */,
 				D25492A91E76F61800CF7F33 /* ViewController.m */,
 				D25492AB1E76F61800CF7F33 /* Main.storyboard */,
 				D25492AE1E76F61800CF7F33 /* Assets.xcassets */,
 				D25492B01E76F61800CF7F33 /* LaunchScreen.storyboard */,
+				D25492E71E7AAC6100CF7F33 /* Model */,
 				D25492B31E76F61800CF7F33 /* Info.plist */,
 				D25492A21E76F61800CF7F33 /* Supporting Files */,
 			);
@@ -117,6 +128,8 @@
 		D25492A21E76F61800CF7F33 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D25492A51E76F61800CF7F33 /* AppDelegate.h */,
+				D25492A61E76F61800CF7F33 /* AppDelegate.m */,
 				D25492A31E76F61800CF7F33 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +151,21 @@
 				D25492C91E76F61900CF7F33 /* Info.plist */,
 			);
 			path = myIosTestUITests;
+			sourceTree = "<group>";
+		};
+		D25492E71E7AAC6100CF7F33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D25492D51E76F66600CF7F33 /* Card.h */,
+				D25492D61E76F68700CF7F33 /* Card.m */,
+				D25492DD1E777CF100CF7F33 /* Deck.h */,
+				D25492DE1E777CF100CF7F33 /* Deck.m */,
+				D25492E01E7840A000CF7F33 /* PlayingCard.h */,
+				D25492E11E7840A000CF7F33 /* PlayingCard.m */,
+				D25492E31E79643D00CF7F33 /* PlayingCardDeck.h */,
+				D25492E41E79643D00CF7F33 /* PlayingCardDeck.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25492E21E7840A000CF7F33 /* PlayingCard.m in Sources */,
+				D25492DF1E777CF100CF7F33 /* Deck.m in Sources */,
 				D25492AA1E76F61800CF7F33 /* ViewController.m in Sources */,
 				D25492A71E76F61800CF7F33 /* AppDelegate.m in Sources */,
+				D25492E51E79643D00CF7F33 /* PlayingCardDeck.m in Sources */,
 				D25492A41E76F61800CF7F33 /* main.m in Sources */,
+				D25492D71E76F68700CF7F33 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
